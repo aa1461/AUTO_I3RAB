@@ -1,4 +1,4 @@
-# Auto-i3rab: Arabic Diacritical Mark Prediction Using Joint Hidden Markov Models
+# Auto-I3rab: Arabic Diacritical Mark Prediction Using Joint Hidden Markov Models
 
 A computational linguistics research project investigating how part-of-speech (POS) information can improve the prediction of Arabic word-ending diacritical marks through a two-layer Hidden Markov Model (HMM) and modified Viterbi decoding algorithm.
 
