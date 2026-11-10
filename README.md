@@ -107,12 +107,14 @@ Separate preprocessing pipelines were developed to normalize the data and constr
 
 ## Repository Structure
 
+```text
 AUTO_I3RAB/
 ├── Ayaat_JP_Code.ipynb
 ├── Datasets/
 ├── JP_Variables/
 ├── .gitattributes
 └── README.md
+```
 
 The main notebook contains the experimental implementation, including preprocessing, probabilistic modeling, decoding, and evaluation.
 
