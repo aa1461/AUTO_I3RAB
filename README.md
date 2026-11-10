@@ -41,10 +41,10 @@ The final model combines lexical and POS-based information to predict the most l
 
 The modified decoder uses a weighted emission score:
 
-[
-S(m) = \alpha \log P(w \mid m) +
-(1-\alpha)\log P(m \mid POS)
-]
+
+$$
+S(m) = \alpha \log P(w \mid m) + (1-\alpha)\log P(m \mid POS)
+$$
 
 where:
 
@@ -59,11 +59,14 @@ The decoder incorporates mark-transition probabilities and uses dynamic programm
 
 The joint model was evaluated against the standalone word–mark HMM baseline.
 
-Metric	Baseline HMM	Joint HMM (α = 0.6)
-Test accuracy	78.80%	81.44%
-Known-word accuracy	80.22%	82.70%
-Unknown-word accuracy	22.58%	32.25%
-Macro F1	62.50%	68.28%
+
+| Metric | Baseline HMM | Joint HMM (α = 0.6) |
+|---|---:|---:|
+| Test accuracy | 78.80% | **81.44%** |
+| Known-word accuracy | 80.22% | **82.70%** |
+| Unknown-word accuracy | 22.58% | **32.25%** |
+| Macro F1 | 62.50% | **68.28%** |
+
 
 The joint model improved overall test accuracy by 2.64 percentage points and unknown-word accuracy by 9.67 percentage points.
 
