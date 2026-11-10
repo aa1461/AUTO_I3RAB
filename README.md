@@ -127,10 +127,17 @@ Potential improvements include:
 
 Research Context
 
-Developed as an independent research project at Princeton University.
 
-Researcher: Ayaat Al-Yasseri
+## Research Paper
 
-Advisers: Christiane Fellbaum and Mounia Mnouer
+This project was developed as part of independent research
+at Princeton University.
 
-Research report: Auto-i3rab: Using a Joint Hidden Markov Model to Predict Ending Diacritical Marks in Arabic Text (2026).
+**Title:** Auto-i3rab: Using a Joint Hidden Markov Model
+to Predict Ending Diacritical Marks in Arabic Text
+
+**Author:** Ayaat Al-Yasseri  
+**Year:** 2026  
+**Advisers:** Christiane Fellbaum and Mounia Mnouer
+
+[Read the Full Research Paper](docs/Auto_i3rab_Research_Report.pdf)
