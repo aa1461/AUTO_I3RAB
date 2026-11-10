@@ -1,10 +1,10 @@
-Auto-i3rab: Arabic Diacritical Mark Prediction Using Joint Hidden Markov Models
+# Auto-i3rab: Arabic Diacritical Mark Prediction Using Joint Hidden Markov Models
 
 A computational linguistics research project investigating how part-of-speech (POS) information can improve the prediction of Arabic word-ending diacritical marks through a two-layer Hidden Markov Model (HMM) and modified Viterbi decoding algorithm.
 
 Key result: Achieved 81.44% test accuracy, improving upon a standalone word–mark HMM baseline of 78.80%, while increasing unseen-word accuracy from 22.58% to 32.25%.
 
-Project Overview
+## Project Overview
 
 Arabic text frequently omits diacritical marks that encode grammatical and morphological information. These omissions introduce ambiguity for natural language processing systems, particularly when interpreting Modern Standard Arabic (MSA).
 
@@ -12,7 +12,7 @@ This project investigates whether incorporating grammatical context through POS 
 
 The proposed approach combines two probabilistic sequence models through a joint Viterbi decoding framework.
 
-Model Architecture
+## Model Architecture
 
 The system consists of three main components:
 
@@ -55,7 +55,7 @@ where:
 
 The decoder incorporates mark-transition probabilities and uses dynamic programming with backtracking to recover the highest-scoring sequence.
 
-Experimental Results
+## Experimental Results
 
 The joint model was evaluated against the standalone word–mark HMM baseline.
 
@@ -69,11 +69,11 @@ The joint model improved overall test accuracy by 2.64 percentage points and unk
 
 Experiments also demonstrated the importance of tuning the weighting parameter. Over-reliance on POS information reduced accuracy, while balancing POS context with lexical information improved prediction performance.
 
-Implementation
+## Implementation
 
 The project was implemented in Python using custom probabilistic sequence modeling algorithms.
 
-Core technologies:
+### Core technologies:
 
 * Python and Jupyter Notebook
 * NumPy
@@ -82,7 +82,7 @@ Core technologies:
 * NetworkX
 * Regular expressions and Unicode text processing
 
-Technical methods:
+### Technical methods:
 
 * Hidden Markov Models
 * Viterbi decoding and dynamic programming
@@ -92,7 +92,7 @@ Technical methods:
 * Hyperparameter experimentation
 * Accuracy, F1, and confusion-matrix evaluation
 
-Datasets
+## Datasets
 
 Two Arabic corpora were used:
 
@@ -102,7 +102,7 @@ Arabic Text Diacritization Dataset (derived from Tashkeela): Fully diacritized A
 
 Separate preprocessing pipelines were developed to normalize the data and construct the required sentence-level representations.
 
-Repository Structure
+## Repository Structure
 
 AUTO_I3RAB/
 ├── Ayaat_JP_Code.ipynb
@@ -113,11 +113,11 @@ AUTO_I3RAB/
 
 The main notebook contains the experimental implementation, including preprocessing, probabilistic modeling, decoding, and evaluation.
 
-Limitations and Future Work
+## Limitations and Future Work
 
 The primary limitation is the lack of a sufficiently large corpus containing both POS annotations and full diacritization. Consequently, predicted POS labels were used to construct the joint training data, potentially introducing error propagation.
 
-Potential improvements include:
+### Potential improvements include:
 
 * Developing a jointly annotated corpus.
 * Incorporating morphological features.
@@ -125,10 +125,10 @@ Potential improvements include:
 * Comparing probabilistic models with neural sequence architectures.
 * Refactoring the experimental implementation into reusable software modules.
 
-Research Context
+## Research Context
 
 
-## Research Paper
+### Research Paper
 
 This project was developed as part of independent research
 at Princeton University.
